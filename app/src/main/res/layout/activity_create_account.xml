@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateAccountActivity">
+
+    <Button
+        android:id="@+id/buttonSignUp"
+        android:layout_width="229dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="728dp"
+        android:layout_marginEnd="100dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/inder"
+        android:lineHeight="45sp"
+        android:text="@string/sign_up"
+        android:textColor="#FFFFFF"
+        android:textFontWeight="400"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewPinkEllipse1"
+        android:layout_width="460dp"
+        android:layout_height="460dp"
+        android:layout_marginTop="83dp"
+        android:layout_marginEnd="58dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pink_ellipses"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/textViewCreateAccount"
+        android:layout_width="241dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="162dp"
+        android:fontFamily="@font/inter_bold"
+        android:lineHeight="38.73sp"
+        android:text="@string/create_account"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/buttonBackToLogin"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/back_button"
+        android:src="@drawable/ic_back"
+        app:icon="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription,TextContrastCheck,SpeakableTextPresentCheck,ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imageViewPinkEllipse2"
+        android:layout_width="460dp"
+        android:layout_height="460dp"
+        android:layout_marginTop="336dp"
+        android:layout_marginEnd="-125dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pink_ellipses"
+        tools:ignore="ContentDescription" />
+
+    <View
+        android:id="@+id/dividerCreateAccount1"
+        android:layout_width="349dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="340dp"
+        android:layout_marginEnd="40dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/dividerCreateAccount2"
+        android:layout_width="349dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="465dp"
+        android:layout_marginEnd="40dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/dividerCreateAccount3"
+        android:layout_width="349dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="603dp"
+        android:layout_marginEnd="40dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextEnterEmail"
+        android:layout_width="333dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginEnd="56dp"
+        android:background="@null"
+        android:fontFamily="@font/inter"
+        android:hint="@string/enter_email_id"
+        android:importantForAutofill="no"
+        android:inputType="textNoSuggestions|textEmailAddress"
+        android:lineHeight="31.47dp"
+        android:textColor="#000000"
+        android:textFontWeight="400"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/editTextCreateUsername"
+        android:layout_width="333dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="384dp"
+        android:layout_marginEnd="56dp"
+        android:background="@null"
+        android:fontFamily="@font/inter"
+        android:hint="@string/create_username"
+        android:importantForAutofill="no"
+        android:inputType="none|text"
+        android:lineHeight="31.47dp"
+        android:textColor="#000000"
+        android:textFontWeight="400"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/editTextCreatePassword"
+        android:layout_width="333dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="522dp"
+        android:layout_marginEnd="56dp"
+        android:background="@null"
+        android:fontFamily="@font/inter"
+        android:hint="@string/create_password"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:lineHeight="31.47dp"
+        android:textColor="#000000"
+        android:textFontWeight="400"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

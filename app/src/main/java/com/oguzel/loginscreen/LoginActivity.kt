@@ -1,10 +1,10 @@
-package com.dag.odev2fmss
+package com.oguzel.loginscreen
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import com.dag.odev2fmss.databinding.ActivityLoginBinding
+import com.oguzel.loginscreen.databinding.ActivityLoginBinding
 
 class LoginActivity : AppCompatActivity() {
 

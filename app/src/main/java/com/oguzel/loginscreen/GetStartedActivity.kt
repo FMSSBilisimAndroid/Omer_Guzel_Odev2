@@ -1,9 +1,9 @@
-package com.dag.odev2fmss
+package com.oguzel.loginscreen
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.dag.odev2fmss.databinding.ActivityGetstartedBinding
+import com.oguzel.loginscreen.databinding.ActivityGetstartedBinding
 
 class GetStartedActivity : AppCompatActivity() {
 

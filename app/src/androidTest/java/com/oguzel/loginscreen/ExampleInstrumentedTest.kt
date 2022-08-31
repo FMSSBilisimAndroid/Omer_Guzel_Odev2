@@ -1,4 +1,4 @@
-package com.dag.odev2fmss
+package com.oguzel.loginscreen
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

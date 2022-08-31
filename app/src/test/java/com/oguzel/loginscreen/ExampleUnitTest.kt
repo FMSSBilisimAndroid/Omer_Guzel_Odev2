@@ -1,4 +1,4 @@
-package com.dag.odev2fmss
+package com.oguzel.loginscreen
 
 import org.junit.Test
 

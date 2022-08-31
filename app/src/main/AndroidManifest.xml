@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.dag.odev2fmss">
+    package="com.oguzel.loginscreen">
 
     <application
         android:allowBackup="true"
@@ -10,13 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Odev2FMSS">
         <activity
-            android:name=".CreateAccountActivity"
+            android:name="com.oguzel.loginscreen.CreateAccountActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name="com.oguzel.loginscreen.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".GetStartedActivity"
+            android:name="com.oguzel.loginscreen.GetStartedActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

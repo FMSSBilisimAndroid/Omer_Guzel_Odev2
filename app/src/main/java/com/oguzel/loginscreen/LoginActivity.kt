@@ -12,8 +12,8 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var binding : ActivityLoginBinding
     private lateinit var intentToGetStarted : Intent
     private lateinit var intentToCreateAccount : Intent
-    private lateinit var username : String
-    private lateinit var password : String
+    private lateinit var username : EditText
+    private lateinit var password : EditText
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,8 +21,8 @@ class LoginActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        username = binding.editTextUserName.text.toString()
-        password = binding.editTextPassword.text.toString()
+        username = binding.editTextUserName
+        password = binding.editTextPassword
 
         binding.buttonBackToGetStarted.setOnClickListener {
             //Clicking this button will open Get Started Activity
@@ -45,8 +45,8 @@ class LoginActivity : AppCompatActivity() {
      * @param password Password from Login Activity EditText
      */
     //FIXME Function takes empty inputs
-    private fun loginAuth(username:String, password:String){
-        if(username == "admin" && password == "admin") {
+    private fun loginAuth(username:EditText, password:EditText){
+        if(username.text.toString() == "admin" && password.text.toString() == "admin") {
             //Login Successful
             Toast.makeText(this,"Login Successful",Toast.LENGTH_SHORT).show()
         } else {

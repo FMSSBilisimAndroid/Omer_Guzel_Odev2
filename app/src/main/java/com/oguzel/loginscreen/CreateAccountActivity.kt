@@ -9,6 +9,7 @@ import com.oguzel.loginscreen.databinding.ActivityCreateAccountBinding
 class CreateAccountActivity : AppCompatActivity() {
 
    private lateinit var binding : ActivityCreateAccountBinding
+   private lateinit var intentBackToLogin : Intent
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,12 +19,12 @@ class CreateAccountActivity : AppCompatActivity() {
 
         binding.buttonBackToLogin.setOnClickListener {
             //Clicking button will open Login activity
-            val intent4 = Intent(this,LoginActivity::class.java)
-            startActivity(intent4)
+            intentBackToLogin = Intent(this,LoginActivity::class.java)
+            startActivity(intentBackToLogin)
         }
 
         binding.buttonSignUp.setOnClickListener {
-            //Sign up functionality with Firebase wiil be implemented in future
+            //TODO Sign up functionality with Firebase will be implemented in the future.
             Toast.makeText(this,"Not Implemented Yet",Toast.LENGTH_SHORT).show()
         }
 

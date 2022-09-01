@@ -8,6 +8,7 @@ import com.oguzel.loginscreen.databinding.ActivityGetstartedBinding
 class GetStartedActivity : AppCompatActivity() {
 
     private lateinit var binding : ActivityGetstartedBinding
+    private lateinit var intentToLogin : Intent
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -17,8 +18,8 @@ class GetStartedActivity : AppCompatActivity() {
 
         binding.buttonJoinNow.setOnClickListener {
             //Clicking this button will open login activity
-            val intent = Intent(this,LoginActivity::class.java)
-            startActivity(intent)
+            intentToLogin = Intent(this,LoginActivity::class.java)
+            startActivity(intentToLogin)
         }
     }
 }

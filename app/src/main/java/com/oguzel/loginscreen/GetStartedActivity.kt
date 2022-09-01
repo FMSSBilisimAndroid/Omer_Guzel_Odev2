@@ -16,6 +16,7 @@ class GetStartedActivity : AppCompatActivity() {
         setContentView(view)
 
         binding.buttonJoinNow.setOnClickListener {
+            //Clicking this button will open login activity
             val intent = Intent(this,LoginActivity::class.java)
             startActivity(intent)
         }

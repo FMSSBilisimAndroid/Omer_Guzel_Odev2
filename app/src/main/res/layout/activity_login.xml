@@ -8,41 +8,42 @@
 
     <ImageView
         android:id="@+id/imageViewGreenEllipse"
+        style="@style/ellipseStyle"
         android:layout_marginBottom="-80dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/green_ellipses"
-        tools:ignore="ContentDescription"
-        style="@style/ellipseStyle" />
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/imageViewGreenEllipse1"
+        style="@style/ellipseStyle"
         android:layout_marginEnd="183dp"
         android:layout_marginBottom="173dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/green_ellipses"
-        tools:ignore="ContentDescription"
-        style="@style/ellipseStyle" />
+        tools:ignore="ContentDescription" />
 
     <View
         android:id="@+id/dividerLogin1"
+        style="@style/dividerStyle"
         android:layout_marginEnd="50dp"
         android:layout_marginBottom="463dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        style="@style/dividerStyle" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <View
         android:id="@+id/dividerLogin2"
+        style="@style/dividerStyle"
         android:layout_marginEnd="50dp"
         android:layout_marginBottom="325dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        style="@style/dividerStyle" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <EditText
         android:id="@+id/editTextUserName"
+        style="@style/editTextCredentials"
         android:layout_width="333dp"
         android:layout_height="48dp"
         android:layout_marginEnd="52dp"
@@ -52,11 +53,11 @@
         android:inputType="textNoSuggestions"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:ignore="TextContrastCheck"
-        style="@style/editTextCredentials" />
+        tools:ignore="TextContrastCheck" />
 
     <EditText
         android:id="@+id/editTextPassword"
+        style="@style/editTextCredentials"
         android:layout_width="333dp"
         android:layout_height="48dp"
         android:layout_marginEnd="50dp"
@@ -66,28 +67,27 @@
         android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:ignore="TextContrastCheck"
-        style="@style/editTextCredentials" />
+        tools:ignore="TextContrastCheck" />
 
     <Button
         android:id="@+id/buttonLogin"
+        style="@style/blackButtonStyle"
         android:layout_marginEnd="100dp"
         android:layout_marginBottom="176dp"
         android:text="@string/login"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        style="@style/blackButtonStyle" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/textViewWelcomeBack"
+        style="@style/headerWelcome"
         android:layout_width="241dp"
         android:layout_height="61dp"
         android:layout_marginStart="38dp"
         android:layout_marginTop="126dp"
         android:text="@string/welcome_back"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        style="@style/headerWelcome" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textViewEnterUsername"
@@ -111,31 +111,30 @@
         android:layout_marginTop="24dp"
         android:background="@drawable/back_button"
         android:src="@drawable/ic_back"
-        app:icon="@drawable/ic_back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="ContentDescription,TextContrastCheck,SpeakableTextPresentCheck,ImageContrastCheck" />
 
     <TextView
         android:id="@+id/textViewForgottenPassword"
+        style="@style/grayTextStyle"
         android:layout_width="160dp"
         android:layout_height="31dp"
         android:layout_marginEnd="134dp"
         android:layout_marginBottom="127dp"
         android:text="@string/forgotten_password"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        style="@style/grayTextStyle" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/textViewOrCreateANew"
+        style="@style/grayTextStyle"
         android:layout_width="183dp"
         android:layout_height="31dp"
         android:layout_marginEnd="123dp"
         android:layout_marginBottom="103dp"
         android:text="@string/or_create_a_new_account"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        style="@style/grayTextStyle" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

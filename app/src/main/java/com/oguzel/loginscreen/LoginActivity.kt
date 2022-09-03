@@ -9,11 +9,11 @@ import com.oguzel.loginscreen.databinding.ActivityLoginBinding
 
 class LoginActivity : AppCompatActivity() {
 
-    private lateinit var binding : ActivityLoginBinding
-    private lateinit var intentToGetStarted : Intent
-    private lateinit var intentToCreateAccount : Intent
-    private lateinit var username : EditText
-    private lateinit var password : EditText
+    private lateinit var binding: ActivityLoginBinding
+    private lateinit var intentToGetStarted: Intent
+    private lateinit var intentToCreateAccount: Intent
+    private lateinit var username: EditText
+    private lateinit var password: EditText
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,7 +31,7 @@ class LoginActivity : AppCompatActivity() {
         }
         binding.textViewOrCreateANew.setOnClickListener {
             //Clicking this text will open Create Account Activity
-            intentToCreateAccount = Intent(this,CreateAccountActivity::class.java)
+            intentToCreateAccount = Intent(this, CreateAccountActivity::class.java)
             startActivity(intentToCreateAccount)
         }
         binding.buttonLogin.setOnClickListener {
@@ -44,15 +44,13 @@ class LoginActivity : AppCompatActivity() {
      * @param username Username from LoginActivity EditText
      * @param password Password from Login Activity EditText
      */
-    //FIXME Function takes empty inputs
-    private fun loginAuth(username:EditText, password:EditText){
-        if(username.text.toString() == "admin" && password.text.toString() == "admin") {
+    private fun loginAuth(username: EditText, password: EditText) {
+        if (username.text.toString() == "admin" && password.text.toString() == "admin") {
             //Login Successful
-            Toast.makeText(this,"Login Successful",Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show()
         } else {
             //Login Failed
-            Toast.makeText(this,"Login Failed",Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Login Failed", Toast.LENGTH_SHORT).show()
         }
     }
-
 }

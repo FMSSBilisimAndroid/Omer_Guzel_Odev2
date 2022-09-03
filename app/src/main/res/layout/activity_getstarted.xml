@@ -15,8 +15,6 @@
         android:layout_marginStart="33dp"
         android:layout_marginEnd="53dp"
         android:layout_marginBottom="156dp"
-        android:background="#00FFFFFF"
-        android:backgroundTint="#00FFFFFF"
         android:backgroundTintMode="add"
         android:fontFamily="@font/inter_bold"
         android:gravity="top"
@@ -37,8 +35,6 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="7dp"
-        android:background="#00FFFFFF"
-        android:backgroundTint="#00FFFFFF"
         android:gravity="top"
         android:lineHeight="24.2dp"
         android:text="@string/grow_togeth"
@@ -61,7 +57,7 @@
         android:fontFamily="@font/inder"
         android:lineHeight="45dp"
         android:text="@string/joinnow"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/white"
         android:textFontWeight="400"
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -77,7 +73,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/big_ellipses"
-        tools:ignore="ContentDescription"/>
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/imageViewBlueEllipse2"
@@ -90,9 +86,9 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/big_ellipses"
-        tools:ignore="ContentDescription"/>
+        tools:ignore="ContentDescription" />
 
-    <com.google.android.material.imageview.ShapeableImageView
+    <ImageView
         android:id="@+id/imageViewBigFace"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -113,7 +109,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/smallface"
-        tools:ignore="ContentDescription"/>
+        tools:ignore="ContentDescription" />
 
 
     <!-- Grow Together -->
